@@ -43,3 +43,13 @@ export const OptionLink = styled(Link)`
   padding: 10px 15px;
   cursor: pointer;
 `;
+
+export const ScreenWrapper = styled.div`
+  height: 100%;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	z-index: 1000;
+	background-color: #363636;
+	opacity: 0.5;
+`

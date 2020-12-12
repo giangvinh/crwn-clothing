@@ -15,6 +15,7 @@ import {
   LogoContainer,
   OptionsContainer,
   OptionLink,
+  ScreenWrapper
 } from './header.styles';
 
 const Header = ({ currentUser, hidden }) => (
@@ -42,8 +43,9 @@ const Header = ({ currentUser, hidden }) => (
       <CartIcon />
     </OptionsContainer>
     {hidden ? null : <CartDropdown />}
-  </HeaderContainer>
+    </HeaderContainer>
 );
+    // {hidden ? null : <ScreenWrapper />}
 
 const mapStateToProps = createStructuredSelector({
   currentUser: selectCurrentUser,
