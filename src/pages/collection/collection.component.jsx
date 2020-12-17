@@ -48,7 +48,6 @@ const CollectionPage = ({ collection }) => {
   //   showItem = !showItem;
   // });
   const onClick = () => {showItem = !showItem}
-  console.log(showItem);
   return (
     <CollectionPageContainer>
       <CollectionTitle>{title}</CollectionTitle>
@@ -66,4 +65,3 @@ const mapStateToProps = (state, ownProps) => ({
 });
 
 export default connect(mapStateToProps)(CollectionPage);
-      // {showItem ? <ScreenWrapper onClick={onClick()}/> : null}
